@@ -1,6 +1,6 @@
 package com.ingegneri.mastermind.models
 
-import android.graphics.Color
+import androidx.compose.ui.graphics.Color
 
 data class Attempt(
     val guess: List<Color>,
