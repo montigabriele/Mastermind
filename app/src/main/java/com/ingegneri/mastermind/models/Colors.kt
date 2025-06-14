@@ -9,12 +9,11 @@ data class GameColors(
     val yellow: Color = Color.Yellow,
     val purple: Color = Color(0xFF800080),
     val orange: Color = Color(0xFFFFA500),
-    val cyan: Color = Color.Cyan,
     val brown: Color = Color(0xFF8D6E63),
     val pink: Color = Color(0xFFFFC0CB),
     val lime: Color = Color(0xFF8BC34A),
-    val empty: Color = Color.Gray,
     val black: Color = Color.Black
 ) {
-    fun getColors(count: Int) = listOf(red, blue, green, yellow, purple, orange, cyan, brown, pink, lime).take(count)
+    fun getRandomColors(count: Int): List<Color> =
+        listOf(red, blue, green, yellow, purple, orange, brown, pink, lime, black).shuffled().take(count)
 }
